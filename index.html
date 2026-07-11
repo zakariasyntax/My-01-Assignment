@@ -1,11 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <nav>
+        <div>
+            <img src="assets/logo.png" alt="This is logo.">
+        </div>
+        <ul>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Tracks</a></li>
+            <li><a href="#">Venue</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        <div><button class="common-btn">Register Now</button></div>
+    </nav>
+    <section class="hero-section">
+        <h1>Code. <span>Connect.</span> Create</h1>
+        <p>Join 4,000+ engineers, founders, and builders at the premier developer<br> conference of 2026. Three days of
+            cutting-edge
+            talks, hands-on workshops,<br> and meaningful connections.</p>
+        <div><button class="common-btn large-btn">Register Now</button></div>
+
+    </section>
+    <h1 class="heading-1">Meet the Speakers</h1>
+    <section class="second-section common-sec">
+
+        <div class="speaker-card">
+            <img src="assets/andrej.png" alt="Andrej Karpathy Photo">
+            <h6><a href="#">AI / ML</a></h6>
+            <h5>Andrej Karpathy</h5>
+            <h6>Pretraining team, Anthropic</h6>
+        </div>
+        <div class="speaker-card">
+            <img src="assets/demis.png" alt="Demis Hassabis Photo">
+            <h6><a href="#">Cloud & DevOps</a></h6>
+            <h5>Demis Hassabis</h5>
+            <h6>Co-Founder and CEO, Google DeepMind</h6>
+        </div>
+        <div class="speaker-card">
+            <img src="assets/gary.png" alt="Gary Marcus Photo">
+            <h6><a href="#">Frontend</a></h6>
+            <h5>Gary Marcus</h5>
+            <h6>Staff Engineer, Vercel</h6>
+        </div>
+        <div class="speaker-card">
+            <img src="assets/mustafa.png" alt="Mustafa Suleyman Photo">
+            <h6><a href="#">Security</a></h6>
+            <h5>Mustafa Suleyman</h5>
+            <h6>CEO of Microsoft AI</h6>
+        </div>
+
+    </section>
+    <section class="third-section common-sec">
+        <h1 class="heading-1">Secure Your Spot</h1>
+        <h6 class="description">Early-bird pricing ends August 15, 2026.</h6>
+        <div class="card-container">
+            <div class="card">
+                <h5>STANDARD</h5>
+                <h4>$399</h4>
+                <h6>per person</h6>
+                <ul>
+                    <li>Access to all 3 conference days</li>
+                    <li>48 curated technical talks</li>
+                    <li>2 workshop sessions</li>
+                    <li>Networking lunch & coffee breaks</li>
+                    <li>Conference swag bag</li>
+                    <li>Digital recordings (30 days)</li>
+                </ul>
+                <button class="card-btn">Get Standard</button>
+            </div>
+            <div class="card black-card">
+                <h5>PRO</h5>
+                <h4>$749</h4>
+                <h6>per person</h6>
+                <ul>
+                    <li>Everything in Standard</li>
+                    <li>Unlimited workshop access</li>
+                    <li>Speaker meet & greet</li>
+                    <li>VIP networking dinner</li>
+                    <li>Lifetime recording access</li>
+                    <li>1-on-1 mentorship (30 min)</li>
+                </ul>
+                <button class="card-btn active">Get Pro</button>
+            </div>
+            <div class="card">
+                <h5>TEAM</h5>
+                <h4>$5,999</h4>
+                <h6>up to 10 people</h6>
+                <ul>
+                    <li>Everything in Pro (10 seats)</li>
+                    <li>Dedicated team lounge access</li>
+                    <li>Private workshop booking</li>
+                    <li>Company logo on event page</li>
+                    <li>Recruitment booth (1 day)</li>
+                    <li>Priority customer support</li>
+                </ul>
+                <button class="card-btn">Contact Us</button>
+            </div>
+        </div>
+    </section>
+    <section class="fourth-section common-sec">
+        <h1 class="heading-1">Frequently Asked Questions</h1>
+        <h6 class="description">Everything you need to know before you register.</h6>
+
+        <div class="faq-list">
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What's included in the ticket price?</span>
+                    <span class="faq-icon">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>All tickets include access to keynote sessions, the expo floor, and a digital badge. Higher tiers
+                        add
+                        workshops, recordings, and networking events.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Can I upgrade from Standard to Pro after purchasing?</span>
+                    <span class="faq-icon">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, you can upgrade anytime before the event by paying the price difference. Contact support to
+                        process the upgrade.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What's your refund/cancellation policy?</span>
+                    <span class="faq-icon">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Full refunds are available up to 30 days before the event. After that, tickets can be transferred
+                        to
+                        another attendee.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Are group discounts available for Team beyond 10 people?</span>
+                    <span class="faq-icon">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, teams larger than 10 get custom pricing. Reach out to our sales team for a quote.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do I get access to session recordings if I can't attend live?</span>
+                    <span class="faq-icon">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Pro and Team tiers include full recording access. Standard tier includes 30 days of digital
+                        recordings only.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+
+            question.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+
+                faqItems.forEach(other => {
+                    other.classList.remove('open');
+                    other.querySelector('.faq-answer').style.maxHeight = null;
+                });
+
+                if (!isOpen) {
+                    item.classList.add('open');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+    </script>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="assets/footer-logo.png" alt="Logo">
+        </div>
+
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
 </body>
+
 </html>
