@@ -42,15 +42,21 @@ nav ul a {
 }
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
+    /* ;
     width: 100%;
     min-height: 100vh;
     align-items: center;
+    padding: 80px;
+    margin-bottom: 80px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-image: url("./assets/banner.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 80px;
+    background-repeat: no-repeat;
+    align-items: center;
+    min-height: 100vh;
+    padding: 80px 20px 60px;
 }
 
 .hero-section h1 {
@@ -58,9 +64,10 @@ nav ul a {
     font-size: 80px;
     font-weight: bold;
     letter-spacing: -3.2px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     margin-bottom: 20px;
     line-height: 80px;
+    margin-top: 0;
 }
 
 .hero-section span {
@@ -72,14 +79,21 @@ nav ul a {
     font-size: 22px;
     line-height: 24px;
     text-align: center;
-    margin-bottom: 470px;
+    /* margin-bottom: 470px; */
+    margin-bottom: 0;
+
 }
 
 .large-btn {
     padding: 12px 12px;
     width: 282px;
     font-size: 24px;
+    /* margin-top: auto; */
 
+}
+.hero-section>div:last-child {
+    margin-top: auto;
+    /* pushes just the button div to the bottom */
 }
 
 .heading-1 {
@@ -89,6 +103,7 @@ nav ul a {
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 100px;
 }
 
 .common-sec {
@@ -106,12 +121,14 @@ nav ul a {
     margin-bottom: 90px;
     margin-top: 46px;
 }
-.speaker-card h6{
+
+.speaker-card h6 {
     margin-top: 10px;
     color: #575757;
     font-size: 14px;
     font-weight: 400;
 }
+
 .speaker-card h6 a {
     text-decoration: none;
     color: #2563EB;
@@ -127,19 +144,22 @@ nav ul a {
     margin-bottom: 10px;
 
 }
-.description{
-text-align: center;
-color: #575757;
-font-size: 16px;
-font-weight: 400;
-margin-bottom: 50px;
+
+.description {
+    text-align: center;
+    color: #575757;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 50px;
 }
-.card-container{
+
+.card-container {
     display: flex;
     justify-content: space-around;
     margin-bottom: 200px;
 }
-.card{
+
+.card {
     padding: 32px;
     border: 1px solid #E5E7EB;
     max-width: 370px;
@@ -147,34 +167,40 @@ margin-bottom: 50px;
     border-radius: 12px;
 }
 
-.card h5{
+.card h5 {
     font-size: 13px;
     color: #888888;
     font-weight: 700;
 }
-.card h4{
+
+.card h4 {
     color: #0D1B2A;
     font-size: 44px;
     font-weight: bold;
 }
-.card h6{
+
+.card h6 {
     color: #888888;
     font-size: 13px;
     margin-bottom: 20px;
 }
-.card ul{
-    padding:15px;
+
+.card ul {
+    padding: 15px;
     margin-bottom: 20px;
 }
+
 .card ul li::marker {
     color: blue;
 }
-.card ul li{
+
+.card ul li {
     color: #333333;
     font-size: 14px;
     line-height: 21px;
 }
-.card-btn{
+
+.card-btn {
     padding: 11px 0;
     border: 1px solid #2563EB;
     border-radius: 8px;
@@ -185,22 +211,29 @@ margin-bottom: 50px;
     max-width: 304px;
     color: #2563EB;
 }
-.active{
+
+.active {
     background-color: #2563EB;
     color: #FFFFFF;
 }
+
 .black-card {
     background-color: #0D1B2A;
 }
-.black-card h4{
+
+.black-card h4 {
     color: #ffffff;
 }
-.black-card h5{
+
+.black-card h5 {
     color: #93C5FD;
 }
-.black-card ul li,h6{
-    color:#ffffffcc;
+
+.black-card ul li,
+.black-card h6 {
+    color: #ffffffcc;
 }
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -208,6 +241,12 @@ margin-bottom: 50px;
 
     padding: 30px 5%;
     background-color: #111;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .footer-logo img {
@@ -230,6 +269,14 @@ margin-bottom: 50px;
 .social a:hover {
     color: #3b82f6;
 }
+
+
+
+/* Create with Ai */
+
+
+
+
 .fourth-section {
     margin-bottom: 120px;
 }
@@ -290,4 +337,35 @@ margin-bottom: 50px;
     line-height: 22px;
     margin: 0;
     padding: 0 20px 20px;
+}
+/* Helped By AI */
+/* Tablet and below */
+@media (max-width: 900px) {
+    .second-section {
+        grid-template-columns: 1fr;
+        /* stack speaker cards */
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-section h1 {
+        letter-spacing: normal;
+    }
 }
