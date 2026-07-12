@@ -91,6 +91,7 @@ nav ul a {
     /* margin-top: auto; */
 
 }
+
 .hero-section>div:last-child {
     margin-top: auto;
     /* pushes just the button div to the bottom */
@@ -259,7 +260,7 @@ img {
     gap: 20px;
 }
 
-.social a img{
+.social a img {
     color: rgb(248, 244, 244);
     text-decoration: none;
     font-size: 1rem;
@@ -339,6 +340,7 @@ img {
     margin: 0;
     padding: 0 20px 20px;
 }
+
 /* Helped By AI */
 /* Tablet and below */
 @media (max-width: 900px) {
